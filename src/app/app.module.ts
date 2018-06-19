@@ -1,18 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { NamesearchComponent } from './components/namesearch/namesearch.component';
+import { LikesComponent } from './components/likes/likes.component';
+// Services
+import { PeopleService } from './services/people.service';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    NamesearchComponent,
+    LikesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PeopleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

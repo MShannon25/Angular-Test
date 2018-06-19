@@ -1,14 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
+import { PeopleService } from '../../services/people.service'
+
 @Component({
-	selector: 'namesearch',
+	selector: 'name-search',
 	templateUrl: './namesearch.component.html',
 	styleUrls: ['./namesearch.component.css']
 })
 
 export class NamesearchComponent implements OnInit {
 
-	constructor() { }
+	constructor(private people: PeopleService) { }
 
-	ngOnInit() { }
+	ngOnInit() {
+		this.people.getAllPeople()
+			.subscribe(data => {
+				data["People"].forEach(person => {
+					console.log(person.name);
+				})
+			})
+	}
 }
