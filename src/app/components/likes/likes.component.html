@@ -1,1 +1,16 @@
-<Label class="likes" text="Hello LikesComponent!"></Label>
+<div class="likes">
+    <div *ngIf="person">
+        <div class="section like">
+            <h2>Likes: </h2>
+            <ul *ngFor='let like of person.Likes;'>
+                <li>{{like}}</li>
+            </ul>
+        </div>
+        <div class="section dislike">
+            <h2>Dislikes: </h2>
+            <ul *ngFor='let dislike of person.Dislikes;'>
+                <li>{{dislike}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

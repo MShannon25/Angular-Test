@@ -1,1 +1,13 @@
-<Label class="namesearch" text="Hello NamesearchComponent!">NameSearch Component</Label>
+<div class="namesearch">
+    <div class="section">
+        <input type="search" placeholder="Search" />
+        <ul *ngFor="let person of persons; index as i;">
+            <li (click)='selectPerson(person)'>{{person.name}}</li>
+            <!-- <li>{{person.Description}}</li> -->
+        </ul>
+    </div>
+    <div class="section">
+        <header-app [person]='selectedPerson'></header-app>
+        <likes [person]='selectedPerson'></likes>
+    </div>
+</div>

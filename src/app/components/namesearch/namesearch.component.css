@@ -1,3 +1,37 @@
 .namesearch {
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+likes {
+    clear: both;
+        display: block;
+    }
+.section {
+    float: left;
+    padding: 15px;
+}
+.clear {
+    clear: both;
+}
+.section ul {
+    -webkit-padding-start: 0px;
+}
+.section ul li {
+    list-style: none;
+    padding:10px 5px;
+    border-radius: 5px 0;
+    box-shadow: 0px 0px 2px darkslategray;
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+}
+.section ul li:hover {
+    box-shadow: 0px 0px 4px darkslategray;
+}
+.section .selectedPerson {
+    color:lightgray;
+}
+
+input {
+    padding: 10px;
+    color: lightslategray;
+}

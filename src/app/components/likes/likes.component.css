@@ -1,3 +1,25 @@
 .likes {
 
 }
+.likes .section {
+    float: left;
+/* display: inline-block; */
+padding: 10px;
+margin-left: 25px;
+}
+.likes .section ul {
+    margin: 3px;
+}
+.likes .section ul li {
+    list-style: none;
+    font-size: 1.25em;
+}
+.likes .section.like ul li {
+    color: darkgreen;
+}
+.likes .section.dislike ul li {
+    color: darkred;
+}
+.clear {
+    clear: both;
+}
