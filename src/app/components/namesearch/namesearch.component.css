@@ -23,6 +23,12 @@ likes {
     background-color: lightslategray;
     color: white;
     text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .section ul li:hover {
     box-shadow: 0px 0px 4px darkslategray;
