@@ -2,7 +2,7 @@
     <div class="section">
         <input type="search" placeholder="Search" [(ngModel)]="searchText"/>
         <ul *ngFor="let person of persons | filter : searchText">
-            <li (click)='selectPerson(person)'>{{person.name}}</li>
+            <li (click)='selectPerson(person)' [class.selected] = 'person == selectedPerson'>{{person.name}}<span>{{active}}</span></li>
             <!-- <li>{{person.Description}}</li> -->
         </ul>
     </div>

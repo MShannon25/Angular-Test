@@ -11,6 +11,7 @@ import { People } from '../../people.model';
 export class NamesearchComponent implements OnInit {
 	public persons = new Array();
 	public selectedPerson: People;
+	public selected: boolean;
 
 	constructor(private people: PeopleService) { }
 
@@ -24,6 +25,6 @@ export class NamesearchComponent implements OnInit {
 	}
 	selectPerson(person: People): void {
 		console.log(person);
-		this.selectedPerson = person;	
+		this.selectedPerson = person;
 	}
 }

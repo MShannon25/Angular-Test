@@ -30,6 +30,11 @@ likes {
     -ms-user-select: none;
     user-select: none;
 }
+.section ul li.selected {
+    border-radius: 0 5px;
+    box-shadow: none;
+    background-color: steelblue;
+}
 .section ul li:hover {
     box-shadow: 0px 0px 4px darkslategray;
 }
