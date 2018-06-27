@@ -17,26 +17,34 @@ likes {
 }
 .section ul li {
     list-style: none;
+}
+
+.section ul li button {
     padding:10px 5px;
     border-radius: 5px 0;
-    box-shadow: 0px 0px 2px darkslategray;
-    background-color: lightslategray;
     color: white;
+    background-color: darkslategray;
     text-align: center;
+    outline: none;
+    border: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    cursor: pointer;
+    width:200px;
 }
-.section ul li.selected {
+.section ul li button.selected {
+    outline: none;
     border-radius: 0 5px;
     box-shadow: none;
     background-color: steelblue;
 }
-.section ul li:hover {
+.section ul li button:hover {
     box-shadow: 0px 0px 4px darkslategray;
+    border: none;
 }
 .section .selectedPerson {
     color:lightgray;
