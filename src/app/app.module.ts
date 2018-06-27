@@ -10,13 +10,17 @@ import { LikesComponent } from './components/likes/likes.component';
 // Services
 import { PeopleService } from './services/people.service';
 
+// Pipes
+import { FilterPipe } from './pipes/filter.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NamesearchComponent,
-    LikesComponent
+    LikesComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
