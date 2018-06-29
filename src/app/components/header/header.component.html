@@ -2,7 +2,7 @@
 <div *ngIf="person">
         <h1>{{ person.name }}</h1>
     <div class="left-align">
-        <img [src]="person.img" style="min-height:25px; min-width:25px" />
+        <img [src]="person.img" style="min-height:25px; min-width:25px" @myAwesomeAnimation/>
     </div>
     <div class="right-align">
         <button class="btn btn-primary">SEND MESSAGE</button>
